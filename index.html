@@ -16,10 +16,10 @@
             line-height: 1.6;
         }
         .section-title {
-            border-bottom: 2px solid #e5e7eb;
+            border-bottom: 2px solid #c7d2fe; /* Tailwind indigo-200 */
             padding-bottom: 0.5rem;
             margin-bottom: 1.5rem;
-            color: #1f2937;
+            color: #3730a3; /* Tailwind indigo-800 */
             font-weight: 700;
             font-size: 1.5rem;
         }
@@ -88,19 +88,21 @@
 
             <!-- Experience -->
             <section>
-                <h2 class="section-title"><i class="fa-solid fa-briefcase mr-2 text-gray-600"></i>Work Experience</h2>
+                <h2 class="section-title">
+                    <i class="fa-solid fa-briefcase mr-2 text-indigo-500"></i>Work Experience
+                </h2>
                 <div class="mb-4">
                     <div class="flex justify-between items-start flex-col sm:flex-row">
                         <h3 class="text-lg font-semibold text-gray-900">The Hong Kong Polytechnic University</h3>
                         <span class="text-gray-500 text-sm whitespace-nowrap">Aug 2023 - Present</span>
                     </div>
-                    <p class="text-gray-700 italic">Postdoctoral Fellow (Full-time)</p>
+                    <p class="text-gray-700">Postdoctoral Fellow (Full-time)</p>
                 </div>
             </section>
 
             <!-- Education -->
             <section>
-                <h2 class="section-title"><i class="fa-solid fa-graduation-cap mr-2 text-gray-600"></i>Education</h2>
+                <h2 class="section-title"><i class="fa-solid fa-graduation-cap mr-2 text-indigo-500"></i>Education</h2>
                 
                 <div class="mb-4">
                     <div class="flex justify-between items-start flex-col sm:flex-row">
@@ -129,25 +131,32 @@
 
             <!-- Publications -->
             <section>
-                <h2 class="section-title"><i class="fa-solid fa-book mr-2 text-gray-600"></i>Publications</h2>
+                <h2 class="section-title"><i class="fa-solid fa-book mr-2 text-indigo-500"></i>Publications</h2>
                 <p class="text-sm text-gray-500 mb-4">(* Corresponding author, # Co-first author)</p>
                 
                 <h3 class="text-xl font-semibold text-gray-800 mb-3 mt-6">Published or Accepted Papers</h3>
                 <ol class="list-decimal list-outside ml-5 space-y-3 text-gray-700">
+                    <!-- 2026 -->
                     <li>Su W.#, <span class="me">Wu Q.#</span>, Liu K., Yin G., Huang J., Zhao X.* (2026). <span class="pub-title">Nonparametric inference for censored data using deep neural networks.</span> <em>Journal of the Royal Statistical Society Series B: Statistical Methodology</em>, qkag060.</li>
                     <li>Huang Q., Feng A., <span class="me">Wu Q.*</span>, Tong X. (2026). <span class="pub-title">Deep Learning for the change-point Cox model with current status data.</span> <em>Lifetime Data Analysis</em>, 32(14).</li>
+                    
+                    <!-- 2025 -->
+                    <li><span class="me">Wu Q.</span>, Tong X., Sun J.*, Li M. (2025). <span class="pub-title">A longitudinal complex likelihood ratio test for pleiotropy.</span> <em>Communications in Statistics-Theory and Methods</em>, 54(1), 280-295.</li>
+                    <li>Jiang Q., Li M., Tong X., <span class="me">Wu Q.</span>, Zhang X.* (2025). <span class="pub-title">Random change point model with an application to the potato's contribution to population.</span> <em>Empirical Economics</em>, 68(5), 2455-2474.</li>
+                    
+                    <!-- 2024 -->
                     <li><span class="me">Wu Q.</span>, Tong X., Zhao X.* (2024). <span class="pub-title">Deep partially linear Cox model for current status data.</span> <em>Biometrics</em>, 80(2), ujae024.</li>
                     <li>Du M.#, <span class="me">Wu Q.#</span>, Tong X., Zhao X.* (2024). <span class="pub-title">Deep learning for regression analysis of interval-censored data.</span> <em>Electronic Journal of Statistics</em>, 18(2), 4292-4321.</li>
                     <li><span class="me">Wu Q.</span>, Tong X., Duan X.* (2024). <span class="pub-title">Exclusive hypothesis testing for Cox's proportional hazards model.</span> <em>Journal of Systems Science and Complexity</em>, 37(5), 2157-2172.</li>
-                    <li><span class="me">Wu Q.</span>, Tong X., Sun J.*, Li M. (2025). <span class="pub-title">A longitudinal complex likelihood ratio test for pleiotropy.</span> <em>Communications in Statistics-Theory and Methods</em>, 54(1), 280-295.</li>
+                    
+                    <!-- 2022 -->
                     <li><span class="me">Wu Q.</span>, Zhong S.*, Tong X. (2022). <span class="pub-title">Genetic pleiotropy test by quasi p-value with application to typhoon data in China.</span> <em>Journal of Systems Science and Complexity</em>, 35(4), 1557-1572.</li>
-                    <li>Jiang Q., Li M., Tong X., <span class="me">Wu Q.</span>, Zhang X.* (2025). <span class="pub-title">Random change point model with an application to the potato's contribution to population.</span> <em>Empirical Economics</em>, 68(5), 2455-2474.</li>
                 </ol>
             </section>
 
             <!-- Research Projects -->
             <section>
-                <h2 class="section-title"><i class="fa-solid fa-flask mr-2 text-gray-600"></i>Research Projects</h2>
+                <h2 class="section-title"><i class="fa-solid fa-flask mr-2 text-indigo-500"></i>Research Projects</h2>
                 <ul class="list-disc list-outside ml-5 space-y-2 text-gray-700">
                     <li>
                         <strong>National Natural Science Foundation of China (Youth Fund)</strong> (Grant No. 12501387)<br>
@@ -159,7 +168,7 @@
 
             <!-- Academic Exchange / Presentations -->
             <section>
-                <h2 class="section-title"><i class="fa-solid fa-microphone mr-2 text-gray-600"></i>Presentations & Talks</h2>
+                <h2 class="section-title"><i class="fa-solid fa-microphone mr-2 text-indigo-500"></i>Presentations & Talks</h2>
                 <ul class="list-disc list-outside ml-5 space-y-4 text-gray-700">
                     <li>
                         <strong>Invited Address:</strong> <em>Deep generalized accelerated hazards model with interval-censored data</em><br>
@@ -182,7 +191,7 @@
             <!-- Academic Service & Awards -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <section>
-                    <h2 class="section-title"><i class="fa-solid fa-users mr-2 text-gray-600"></i>Academic Service</h2>
+                    <h2 class="section-title"><i class="fa-solid fa-users mr-2 text-indigo-500"></i>Academic Service</h2>
                     <ul class="list-disc list-outside ml-5 space-y-2 text-gray-700">
                         <li>Anonymous Reviewer for <em>Statistica Sinica</em></li>
                         <li>Anonymous Reviewer for <em>Lifetime Data Analysis</em></li>
@@ -190,7 +199,7 @@
                 </section>
 
                 <section>
-                    <h2 class="section-title"><i class="fa-solid fa-award mr-2 text-gray-600"></i>Honors & Awards</h2>
+                    <h2 class="section-title"><i class="fa-solid fa-award mr-2 text-indigo-500"></i>Honors & Awards</h2>
                     <ul class="list-disc list-outside ml-5 space-y-2 text-gray-700">
                         <li><strong>Grand Prize</strong>, "Graduate Academic Innovation Award", Beijing Normal University (2024)</li>
                         <li><strong>Excellent Paper Award</strong>, The 6th National PhD Student Academic Forum in Statistics</li>
@@ -198,14 +207,16 @@
                 </section>
             </div>
 
-            <!-- Skills -->
+            <!-- Skills (Commented out) -->
+            <!--
             <section>
-                <h2 class="section-title"><i class="fa-solid fa-laptop-code mr-2 text-gray-600"></i>Professional Skills</h2>
+                <h2 class="section-title"><i class="fa-solid fa-laptop-code mr-2 text-indigo-500"></i>Professional Skills</h2>
                 <ul class="list-disc list-outside ml-5 space-y-2 text-gray-700">
                     <li><strong>Programming & Data Analysis:</strong> Proficient in Python and R. Strong capability in statistical modeling and complex data processing. Experienced in developing customized statistical analysis tools and implementing deep learning models using frameworks such as TensorFlow and PyTorch.</li>
                     <li><strong>Languages:</strong> Excellent English reading and writing skills, capable of independently drafting scientific papers and technical documents, and actively participating in international academic exchanges.</li>
                 </ul>
             </section>
+            -->
 
         </main>
 
