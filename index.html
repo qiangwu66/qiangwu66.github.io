@@ -23,14 +23,6 @@
             font-weight: 700;
             font-size: 1.5rem;
         }
-        .pub-title {
-            font-weight: 600;
-            color: #111827;
-        }
-        .me {
-            font-weight: bold;
-            text-decoration: underline;
-        }
         a {
             color: #2563eb;
             text-decoration: none;
@@ -38,6 +30,9 @@
         a:hover {
             text-decoration: underline;
         }
+        /* 针对 BibBase 生成内容的样式微调，使其更贴合您的主题 */
+        #bibbase_header { display: none; } /* 隐藏默认的冗余头部 */
+        .bibbase_paper { margin-bottom: 1rem !important; }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -48,7 +43,6 @@
         <header class="bg-white shadow rounded-lg p-8 mb-8 flex flex-col md:flex-row items-center md:items-start gap-8">
             <!-- Profile Image -->
             <div class="flex-shrink-0">
-                <!-- 这里的 src 已经修改为 profile.jpg -->
                 <img class="w-40 h-40 object-cover rounded-full border-4 border-gray-200 shadow-sm" 
                      src="profile.jpg" 
                      alt="Qiang Wu">
@@ -127,31 +121,17 @@
                 </div>
             </section>
 
-            <!-- Publications -->
+            <!-- Publications (Replaced with BibBase) -->
             <section>
                 <h2 class="section-title"><i class="fa-solid fa-book mr-2 text-gray-600"></i>Publications</h2>
-                <p class="text-sm text-gray-500 mb-4">(* Corresponding author, # Co-first author)</p>
+                <p class="text-sm text-gray-500 mb-4">The following list is dynamically generated from my BibTeX file.</p>
                 
-                <h3 class="text-xl font-semibold text-gray-800 mb-3 mt-6">Published or Accepted Papers</h3>
-                <ol class="list-decimal list-outside ml-5 space-y-3 text-gray-700">
-                    <li>Su W.#, <span class="me">Wu Q.#</span>, Liu K., Yin G., Huang J., Zhao X.* (2026). <span class="pub-title">Nonparametric inference for censored data using deep neural networks.</span> <em>Journal of the Royal Statistical Society Series B: Statistical Methodology</em>, qkag060.</li>
-                    <li>Huang Q., Feng A., <span class="me">Wu Q.*</span>, Tong X. (2026). <span class="pub-title">Deep Learning for the change-point Cox model with current status data.</span> <em>Lifetime Data Analysis</em>, 32(14).</li>
-                    <li><span class="me">Wu Q.</span>, Tong X., Zhao X.* (2024). <span class="pub-title">Deep partially linear Cox model for current status data.</span> <em>Biometrics</em>, 80(2), ujae024.</li>
-                    <li>Du M.#, <span class="me">Wu Q.#</span>, Tong X., Zhao X.* (2024). <span class="pub-title">Deep learning for regression analysis of interval-censored data.</span> <em>Electronic Journal of Statistics</em>, 18(2), 4292-4321.</li>
-                    <li><span class="me">Wu Q.</span>, Tong X., Duan X.* (2024). <span class="pub-title">Exclusive hypothesis testing for Cox's proportional hazards model.</span> <em>Journal of Systems Science and Complexity</em>, 37(5), 2157-2172.</li>
-                    <li><span class="me">Wu Q.</span>, Tong X., Sun J.*, Li M. (2025). <span class="pub-title">A longitudinal complex likelihood ratio test for pleiotropy.</span> <em>Communications in Statistics-Theory and Methods</em>, 54(1), 280-295.</li>
-                    <li><span class="me">Wu Q.</span>, Zhong S.*, Tong X. (2022). <span class="pub-title">Genetic pleiotropy test by quasi p-value with application to typhoon data in China.</span> <em>Journal of Systems Science and Complexity</em>, 35(4), 1557-1572.</li>
-                    <li>Jiang Q., Li M., Tong X., <span class="me">Wu Q.</span>, Zhang X.* (2025). <span class="pub-title">Random change point model with an application to the potato's contribution to population.</span> <em>Empirical Economics</em>, 68(5), 2455-2474.</li>
-                </ol>
-
-                <h3 class="text-xl font-semibold text-gray-800 mb-3 mt-8">Working Papers</h3>
-                <ol class="list-decimal list-outside ml-5 space-y-3 text-gray-700">
-                    <li><span class="me">Wu Q.</span>, Du M., Ma S., Zhao X.* <span class="pub-title">Efficient estimation for deep generalized accelerated hazards models with interval-censored data.</span> <em>Biometrics</em> (Major revision).</li>
-                    <li>Feng A.#, <span class="me">Wu Q.#</span>, Hu X.*, Zhao X. <span class="pub-title">Nonparametric inference for conditional mean models with panel count data.</span> <em>Biometrics</em> (Major revision).</li>
-                    <li><span class="pub-title">Statistical inference for interval-censored data using neural exponential path integral.</span> (In preparation).</li>
-                    <li><span class="pub-title">Deep generalized functional Cox model with time-dependent covariates.</span> (In preparation).</li>
-                    <li><span class="pub-title">Deep conditional distribution learning for optimal individualized treatment rule.</span> (In preparation).</li>
-                </ol>
+                <!-- BibBase 嵌入代码 -->
+                <!-- 请将下方 URL 中的 YOUR_GITHUB_USERNAME 替换为您的实际 GitHub 用户名 (例如 qiangwu66) -->
+                <!-- 如果您的仓库名不是 qiangwu66.github.io，也请一并修改 -->
+                <script src="https://bibbase.org/show?bib=https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_USERNAME.github.io/main/publications.bib&jsonp=1&theme=default&authorFirst=1"></script>
+                
+                <!-- 如果您在本地测试时看不到列表，是因为 BibBase 需要从公网读取您的 .bib 文件。当您推送到 GitHub Pages 后即可正常显示。 -->
             </section>
 
             <!-- Research Projects -->
