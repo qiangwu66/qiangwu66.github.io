@@ -3,270 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qiang Wu's Homepage</title>
+    <title>Qiang Wu - Academic Homepage</title>
     <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
             color: #333;
-            line-height: 1.7;
-            background-color: #ffffff;
-        }
-        .nav-link {
-            color: #4a5568;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-        .nav-link:hover {
-            color: #2b6cb0;
+            line-height: 1.6;
         }
         .section-title {
-            font-size: 1.5rem;
-            color: #2d3748;
-            border-bottom: 2px solid #e2e8f0;
+            border-bottom: 2px solid #e5e7eb;
             padding-bottom: 0.5rem;
-            margin-top: 2.5rem;
             margin-bottom: 1.5rem;
-            font-weight: 600;
+            color: #1f2937;
+            font-weight: 700;
+            font-size: 1.5rem;
         }
         .pub-title {
-            font-size: 1.125rem;
-            color: #2b6cb0;
             font-weight: 600;
-            text-decoration: none;
+            color: #111827;
         }
-        .pub-title:hover {
+        .me {
+            font-weight: bold;
             text-decoration: underline;
         }
-        .link-text {
-            color: #3182ce;
+        a {
+            color: #2563eb;
             text-decoration: none;
         }
-        .link-text:hover {
+        a:hover {
             text-decoration: underline;
-        }
-        .highlight-author {
-            font-weight: 700;
-            color: #1a202c;
         }
     </style>
 </head>
-<body>
+<body class="bg-gray-50">
 
-    <!-- Navigation Bar -->
-    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
-        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-xl font-bold text-gray-800">Qiang Wu</div>
-            <div class="hidden md:flex space-x-6 overflow-x-auto">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#publications" class="nav-link">Publications</a>
-                <a href="#projects" class="nav-link">Projects & Services</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Main Content -->
-    <main class="max-w-5xl mx-auto px-6 py-10">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         
-        <!-- Header & Biography -->
-        <div id="home" class="flex flex-col md:flex-row gap-10 items-start">
-            <!-- Left: Profile Info -->
-            <div class="w-full md:w-1/3 flex flex-col items-center md:items-start">
-                <!-- Replace src with your actual photo URL -->
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" 
-                     alt="Qiang Wu" 
-                     class="w-48 h-48 rounded-full object-cover shadow-md mb-6 border-4 border-gray-50">
-                
-                <h1 class="text-2xl font-bold text-gray-900 mb-1">Qiang Wu (吴强)</h1>
-                <p class="text-gray-600 mb-4 text-center md:text-left">
-                    Postdoctoral Fellow<br>
+        <!-- Header Section -->
+        <header class="bg-white shadow rounded-lg p-8 mb-8 flex flex-col md:flex-row items-center md:items-start gap-8">
+            <!-- Profile Image Placeholder -->
+            <div class="flex-shrink-0">
+                <img class="w-40 h-40 object-cover rounded-full border-4 border-gray-200 shadow-sm" 
+                     src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+                     alt="Qiang Wu">
+                <!-- Note: Replace the src URL above with your actual photo URL, e.g., "profile.jpg" after uploading it to your GitHub repo -->
+            </div>
+            
+            <!-- Basic Info -->
+            <div class="flex-grow text-center md:text-left">
+                <h1 class="text-4xl font-bold text-gray-900 mb-2">Qiang Wu (吴强)</h1>
+                <p class="text-xl text-gray-600 mb-4">Postdoctoral Fellow</p>
+                <p class="text-gray-700 mb-2">
+                    <i class="fa-solid fa-building-columns w-5 text-center text-gray-500"></i> 
                     The Hong Kong Polytechnic University
-                </p> 
-
-                <div class="flex flex-col space-y-2 text-gray-600 w-full">
-                    <a href="mailto:qiangwu@mail.bnu.edu.cn" class="hover:text-blue-600 flex items-center gap-2">
-                        <i class="fas fa-envelope w-5 text-center"></i> qiangwu@mail.bnu.edu.cn
-                    </a>
-                    <a href="#" class="hover:text-blue-600 flex items-center gap-2">
-                        <i class="fas fa-graduation-cap w-5 text-center"></i> Google Scholar
-                    </a>
-                    <a href="#" class="hover:text-blue-600 flex items-center gap-2">
-                        <i class="fas fa-file-pdf w-5 text-center"></i> Curriculum Vitae
-                    </a>
+                </p>
+                <p class="text-gray-700 mb-2">
+                    <i class="fa-solid fa-envelope w-5 text-center text-gray-500"></i> 
+                    <a href="mailto:qiangwu@mail.bnu.edu.cn">qiangwu@mail.bnu.edu.cn</a>
+                </p>
+                <p class="text-gray-700 mb-4">
+                    <i class="fa-solid fa-phone w-5 text-center text-gray-500"></i> 
+                    (+86) 18811319765
+                </p>
+                
+                <div class="mt-4">
+                    <h3 class="font-semibold text-gray-900">Research Interests:</h3>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-2 mt-2">
+                        <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Survival Data Analysis</span>
+                        <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Statistical Machine Learning</span>
+                        <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Hypothesis Testing</span>
+                        <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Random Change Point</span>
+                    </div>
                 </div>
             </div>
+        </header>
 
-            <!-- Right: Biography & Interests -->
-            <div class="w-full md:w-2/3">
-                <h2 class="section-title mt-0">Biography</h2>
-                <p class="text-gray-700 mb-4 text-justify">
-                    Hi, my name is Qiang Wu (吴强). I am currently a full-time Postdoctoral Fellow at The Hong Kong Polytechnic University (started in August 2023). 
-                </p>
-                <p class="text-gray-700 mb-4 text-justify">
-                    I received my Ph.D. in Applied Statistics from Beijing Normal University in June 2023. Prior to that, I obtained my Master's degree in Probability and Mathematical Statistics from Beijing Normal University in 2018, and my Bachelor's degree in Mathematics and Applied Mathematics from Anhui Normal University in 2015.
-                </p>
+        <!-- Main Content -->
+        <main class="space-y-12 bg-white shadow rounded-lg p-8">
 
-                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-2">Research Interests</h3>
-                <ul class="list-disc list-inside text-gray-700 space-y-1 ml-2">
-                    <li>Survival Data Analysis</li>
-                    <li>Statistical Machine Learning</li>
-                    <li>Hypothesis Testing</li>
-                    <li>Random Change Point</li>
+            <!-- Experience -->
+            <section>
+                <h2 class="section-title"><i class="fa-solid fa-briefcase mr-2 text-gray-600"></i>Work Experience</h2>
+                <div class="mb-4">
+                    <div class="flex justify-between items-start flex-col sm:flex-row">
+                        <h3 class="text-lg font-semibold text-gray-900">The Hong Kong Polytechnic University</h3>
+                        <span class="text-gray-500 text-sm whitespace-nowrap">Aug 2023 - Present</span>
+                    </div>
+                    <p class="text-gray-700 italic">Postdoctoral Fellow (Full-time)</p>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section>
+                <h2 class="section-title"><i class="fa-solid fa-graduation-cap mr-2 text-gray-600"></i>Education</h2>
+                
+                <div class="mb-4">
+                    <div class="flex justify-between items-start flex-col sm:flex-row">
+                        <h3 class="text-lg font-semibold text-gray-900">Beijing Normal University</h3>
+                        <span class="text-gray-500 text-sm whitespace-nowrap">Sep 2020 - Jun 2023</span>
+                    </div>
+                    <p class="text-gray-700">Ph.D. in Applied Statistics</p>
+                </div>
+
+                <div class="mb-4">
+                    <div class="flex justify-between items-start flex-col sm:flex-row">
+                        <h3 class="text-lg font-semibold text-gray-900">Beijing Normal University</h3>
+                        <span class="text-gray-500 text-sm whitespace-nowrap">Sep 2015 - Jun 2018</span>
+                    </div>
+                    <p class="text-gray-700">M.S. in Probability and Mathematical Statistics</p>
+                </div>
+
+                <div class="mb-4">
+                    <div class="flex justify-between items-start flex-col sm:flex-row">
+                        <h3 class="text-lg font-semibold text-gray-900">Anhui Normal University</h3>
+                        <span class="text-gray-500 text-sm whitespace-nowrap">Sep 2011 - Jul 2015</span>
+                    </div>
+                    <p class="text-gray-700">B.S. in Mathematics and Applied Mathematics</p>
+                </div>
+            </section>
+
+            <!-- Publications -->
+            <section>
+                <h2 class="section-title"><i class="fa-solid fa-book mr-2 text-gray-600"></i>Publications</h2>
+                <p class="text-sm text-gray-500 mb-4">(* Corresponding author, # Co-first author)</p>
+                
+                <h3 class="text-xl font-semibold text-gray-800 mb-3 mt-6">Published or Accepted Papers</h3>
+                <ol class="list-decimal list-outside ml-5 space-y-3 text-gray-700">
+                    <li>Su W.#, <span class="me">Wu Q.#</span>, Liu K., Yin G., Huang J., Zhao X.* (2026). <span class="pub-title">Nonparametric inference for censored data using deep neural networks.</span> <em>Journal of the Royal Statistical Society Series B: Statistical Methodology</em>, qkag060.</li>
+                    <li>Huang Q., Feng A., <span class="me">Wu Q.*</span>, Tong X. (2026). <span class="pub-title">Deep Learning for the change-point Cox model with current status data.</span> <em>Lifetime Data Analysis</em>, 32(14).</li>
+                    <li><span class="me">Wu Q.</span>, Tong X., Zhao X.* (2024). <span class="pub-title">Deep partially linear Cox model for current status data.</span> <em>Biometrics</em>, 80(2), ujae024.</li>
+                    <li>Du M.#, <span class="me">Wu Q.#</span>, Tong X., Zhao X.* (2024). <span class="pub-title">Deep learning for regression analysis of interval-censored data.</span> <em>Electronic Journal of Statistics</em>, 18(2), 4292-4321.</li>
+                    <li><span class="me">Wu Q.</span>, Tong X., Duan X.* (2024). <span class="pub-title">Exclusive hypothesis testing for Cox's proportional hazards model.</span> <em>Journal of Systems Science and Complexity</em>, 37(5), 2157-2172.</li>
+                    <li><span class="me">Wu Q.</span>, Tong X., Sun J.*, Li M. (2025). <span class="pub-title">A longitudinal complex likelihood ratio test for pleiotropy.</span> <em>Communications in Statistics-Theory and Methods</em>, 54(1), 280-295.</li>
+                    <li><span class="me">Wu Q.</span>, Zhong S.*, Tong X. (2022). <span class="pub-title">Genetic pleiotropy test by quasi p-value with application to typhoon data in China.</span> <em>Journal of Systems Science and Complexity</em>, 35(4), 1557-1572.</li>
+                    <li>Jiang Q., Li M., Tong X., <span class="me">Wu Q.</span>, Zhang X.* (2025). <span class="pub-title">Random change point model with an application to the potato's contribution to population.</span> <em>Empirical Economics</em>, 68(5), 2455-2474.</li>
+                </ol>
+
+                <h3 class="text-xl font-semibold text-gray-800 mb-3 mt-8">Working Papers</h3>
+                <ol class="list-decimal list-outside ml-5 space-y-3 text-gray-700">
+                    <li><span class="me">Wu Q.</span>, Du M., Ma S., Zhao X.* <span class="pub-title">Efficient estimation for deep generalized accelerated hazards models with interval-censored data.</span> <em>Biometrics</em> (Major revision).</li>
+                    <li>Feng A.#, <span class="me">Wu Q.#</span>, Hu X.*, Zhao X. <span class="pub-title">Nonparametric inference for conditional mean models with panel count data.</span> <em>Biometrics</em> (Major revision).</li>
+                    <li><span class="pub-title">Statistical inference for interval-censored data using neural exponential path integral.</span> (In preparation).</li>
+                    <li><span class="pub-title">Deep generalized functional Cox model with time-dependent covariates.</span> (In preparation).</li>
+                    <li><span class="pub-title">Deep conditional distribution learning for optimal individualized treatment rule.</span> (In preparation).</li>
+                </ol>
+            </section>
+
+            <!-- Research Projects -->
+            <section>
+                <h2 class="section-title"><i class="fa-solid fa-flask mr-2 text-gray-600"></i>Research Projects</h2>
+                <ul class="list-disc list-outside ml-5 space-y-2 text-gray-700">
+                    <li>
+                        <strong>National Natural Science Foundation of China (Youth Fund)</strong> (Grant No. 12501387)<br>
+                        <em>Statistical inference theory and methods for interval-censored data based on deep learning</em><br>
+                        Role: Principal Investigator (PI) | Period: Jan 2026 - Dec 2028
+                    </li>
                 </ul>
+            </section>
+
+            <!-- Academic Exchange / Presentations -->
+            <section>
+                <h2 class="section-title"><i class="fa-solid fa-microphone mr-2 text-gray-600"></i>Presentations & Talks</h2>
+                <ul class="list-disc list-outside ml-5 space-y-4 text-gray-700">
+                    <li>
+                        <strong>Invited Address:</strong> <em>Deep generalized accelerated hazards model with interval-censored data</em><br>
+                        2024 The 16th National Symposium on Survival Analysis and Applied Statistics<br>
+                        <span class="text-sm text-gray-500">Zhejiang Gongshang University, Zhejiang, China | Nov 15-17, 2024</span>
+                    </li>
+                    <li>
+                        <strong>Invited Address:</strong> <em>Deep generalized accelerated hazards model with interval-censored data</em><br>
+                        ICSA 2024 China Conference<br>
+                        <span class="text-sm text-gray-500">Zhongnan University of Economics and Law, Hubei, China | Jun 28-30, 2024</span>
+                    </li>
+                    <li>
+                        <strong>Invited Address:</strong> <em>Complex likelihood ratio test for genetic pleiotropy with model free assumption</em><br>
+                        The BNU-GWU Summer Statistics Research Forum<br>
+                        <span class="text-sm text-gray-500">Beijing Normal University, Beijing, China | Jun 2-4, 2021</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Academic Service & Awards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <section>
+                    <h2 class="section-title"><i class="fa-solid fa-users mr-2 text-gray-600"></i>Academic Service</h2>
+                    <ul class="list-disc list-outside ml-5 space-y-2 text-gray-700">
+                        <li>Anonymous Reviewer for <em>Statistica Sinica</em></li>
+                        <li>Anonymous Reviewer for <em>Lifetime Data Analysis</em></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="section-title"><i class="fa-solid fa-award mr-2 text-gray-600"></i>Honors & Awards</h2>
+                    <ul class="list-disc list-outside ml-5 space-y-2 text-gray-700">
+                        <li><strong>Grand Prize</strong>, "Graduate Academic Innovation Award", Beijing Normal University (2024)</li>
+                        <li><strong>Excellent Paper Award</strong>, The 6th National PhD Student Academic Forum in Statistics</li>
+                    </ul>
+                </section>
             </div>
-        </div>
 
-        <!-- Education & Work Experience -->
-        <section id="experience">
-            <h2 class="section-title">Education & Work Experience</h2>
-            <div class="space-y-4 text-gray-700">
-                <div class="flex flex-col md:flex-row justify-between">
-                    <div>
-                        <span class="font-semibold text-gray-900">The Hong Kong Polytechnic University</span><br>
-                        Postdoctoral Fellow (Full-time)
-                    </div>
-                    <div class="text-gray-500 italic">2023.08 - Present</div>
-                </div>
-                <div class="flex flex-col md:flex-row justify-between">
-                    <div>
-                        <span class="font-semibold text-gray-900">Beijing Normal University</span><br>
-                        Ph.D. in Applied Statistics
-                    </div>
-                    <div class="text-gray-500 italic">2020.09 - 2023.06</div>
-                </div>
-                <div class="flex flex-col md:flex-row justify-between">
-                    <div>
-                        <span class="font-semibold text-gray-900">Beijing Normal University</span><br>
-                        M.S. in Probability and Mathematical Statistics
-                    </div>
-                    <div class="text-gray-500 italic">2015.09 - 2018.06</div>
-                </div>
-                <div class="flex flex-col md:flex-row justify-between">
-                    <div>
-                        <span class="font-semibold text-gray-900">Anhui Normal University</span><br>
-                        B.S. in Mathematics and Applied Mathematics
-                    </div>
-                    <div class="text-gray-500 italic">2011.09 - 2015.07</div>
-                </div>
-            </div>
-        </section>
+            <!-- Skills -->
+            <section>
+                <h2 class="section-title"><i class="fa-solid fa-laptop-code mr-2 text-gray-600"></i>Professional Skills</h2>
+                <ul class="list-disc list-outside ml-5 space-y-2 text-gray-700">
+                    <li><strong>Programming & Data Analysis:</strong> Proficient in Python and R. Strong capability in statistical modeling and complex data processing. Experienced in developing customized statistical analysis tools and implementing deep learning models using frameworks such as TensorFlow and PyTorch.</li>
+                    <li><strong>Languages:</strong> Excellent English reading and writing skills, capable of independently drafting scientific papers and technical documents, and actively participating in international academic exchanges.</li>
+                </ul>
+            </section>
 
-        <!-- Publications -->
-        <section id="publications">
-            <h2 class="section-title">Publications</h2>
-            <p class="text-sm text-gray-500 mb-4">(* Corresponding author, # Co-first author)</p>
-            
-            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-4">Published or Accepted Papers</h3>
-            <ol class="list-decimal list-inside space-y-4 text-gray-700">
-                <li>
-                    Su W.<sup>#</sup>, <span class="highlight-author">Wu Q.<sup>#</sup></span>, Liu K., Yin G., Huang J., Zhao X.* (2026). Nonparametric inference for censored data using deep neural networks. 
-                    <em class="text-gray-600">Journal of the Royal Statistical Society Series B: Statistical Methodology</em>, qkag060.
-                </li>
-                <li>
-                    Huang Q., Feng A., <span class="highlight-author">Wu Q.*</span>, Tong X. (2026). Deep Learning for the change-point Cox model with current status data. 
-                    <em class="text-gray-600">Lifetime Data Analysis</em>, 32(14).
-                </li>
-                <li>
-                    <span class="highlight-author">Wu Q.</span>, Tong X., Zhao X.* (2024). Deep partially linear Cox model for current status data. 
-                    <em class="text-gray-600">Biometrics</em>, 80(2), ujae024.
-                </li>
-                <li>
-                    Du M.<sup>#</sup>, <span class="highlight-author">Wu Q.<sup>#</sup></span>, Tong X., Zhao X.* (2024). Deep learning for regression analysis of interval-censored data. 
-                    <em class="text-gray-600">Electronic Journal of Statistics</em>, 18(2), 4292-4321.
-                </li>
-                <li>
-                    <span class="highlight-author">Wu Q.</span>, Tong X., Duan X.* (2024). Exclusive hypothesis testing for Cox's proportional hazards model. 
-                    <em class="text-gray-600">Journal of Systems Science and Complexity</em>, 37(5), 2157-2172.
-                </li>
-                <li>
-                    <span class="highlight-author">Wu Q.</span>, Tong X., Sun J.*, Li M. (2025). A longitudinal complex likelihood ratio test for pleiotropy. 
-                    <em class="text-gray-600">Communications in Statistics-Theory and Methods</em>, 54(1), 280-295.
-                </li>
-                <li>
-                    <span class="highlight-author">Wu Q.</span>, Zhong S.*, Tong X. (2022). Genetic pleiotropy test by quasi p-value with application to typhoon data in China. 
-                    <em class="text-gray-600">Journal of Systems Science and Complexity</em>, 35(4), 1557-1572.
-                </li>
-                <li>
-                    Jiang Q., Li M., Tong X., <span class="highlight-author">Wu Q.</span>, Zhang X.* (2025). Random change point model with an application to the potato's contribution to population. 
-                    <em class="text-gray-600">Empirical Economics</em>, 68(5), 2455-2474.
-                </li>
-            </ol>
+        </main>
 
-            <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-4">Working Papers</h3>
-            <ol class="list-decimal list-inside space-y-4 text-gray-700">
-                <li>
-                    <span class="highlight-author">Wu Q.</span>, Du M., Ma S., Zhao X.* Efficient estimation for deep generalized accelerated hazards models with interval-censored data. 
-                    <em class="text-gray-600">Biometrics</em> (Major revision).
-                </li>
-                <li>
-                    Feng A.<sup>#</sup>, <span class="highlight-author">Wu Q.<sup>#</sup></span>, Hu X.*, Zhao X. Nonparametric inference for conditional mean models with panel count data. 
-                    <em class="text-gray-600">Biometrics</em> (Major revision).
-                </li>
-                <li>
-                    Statistical inference for interval-censored data using neural exponential path integral. (In preparation).
-                </li>
-                <li>
-                    Deep generalized functional Cox model with time-dependent covariates. (In preparation).
-                </li>
-                <li>
-                    Deep conditional distribution learning for optimal individualized treatment rule. (In preparation).
-                </li>
-            </ol>
-        </section>
-
-        <!-- Projects, Talks & Services -->
-        <section id="projects">
-            <h2 class="section-title">Research Projects & Academic Services</h2>
-            
-            <h3 class="text-xl font-semibold text-gray-800 mt-4 mb-2">Research Grants</h3>
-            <ul class="list-disc list-inside text-gray-700 space-y-2 ml-2">
-                <li>
-                    <strong>Principal Investigator (PI)</strong>, National Natural Science Foundation of China (Youth Fund, No. 12501387). 
-                    <em>Statistical inference theory and methods for interval-censored data based on deep learning</em>. (2026.01 - 2028.12)
-                </li>
-            </ul>
-
-            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-2">Invited Talks & Presentations</h3>
-            <ul class="list-disc list-inside text-gray-700 space-y-3 ml-2">
-                <li>
-                    <strong>Nov 2024</strong>: The 16th National Symposium on Survival Analysis and Applied Statistics (Zhejiang Gongshang University).<br>
-                    <span class="ml-6 text-gray-600"><em>Invited address: Deep generalized accelerated hazards model with interval-censored data.</em></span>
-                </li>
-                <li>
-                    <strong>Jun 2024</strong>: ICSA 2024 China Conference (Zhongnan University of Economics and Law).<br>
-                    <span class="ml-6 text-gray-600"><em>Invited address: Deep generalized accelerated hazards model with interval-censored data.</em></span>
-                </li>
-                <li>
-                    <strong>Jun 2021</strong>: The BNU-GWU Summer Statistics Research Forum (Beijing Normal University).<br>
-                    <span class="ml-6 text-gray-600"><em>Invited address: Complex likelihood ratio test for genetic pleiotropy with model free assumption.</em></span>
-                </li>
-            </ul>
-
-            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-2">Professional Services</h3>
-            <ul class="list-disc list-inside text-gray-700 space-y-1 ml-2">
-                <li>Anonymous Reviewer for <em>Statistica Sinica</em> and <em>Lifetime Data Analysis</em>.</li>
-            </ul>
-
-            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-2">Honors & Awards</h3>
-            <ul class="list-disc list-inside text-gray-700 space-y-1 ml-2">
-                <li>Special Prize, "Graduate Academic Innovation Award", Beijing Normal University (2024).</li>
-                <li>Excellent Paper Award, The 6th National Doctoral Forum on Statistics.</li>
-            </ul>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-50 border-t border-gray-200 mt-12 py-8">
-        <div class="max-w-5xl mx-auto px-6 text-center text-gray-500 text-sm">
+        <!-- Footer -->
+        <footer class="text-center text-gray-500 text-sm mt-8 pb-8">
             <p>&copy; 2026 Qiang Wu. All rights reserved.</p>
-            <p class="mt-2">Last updated: May 2026</p>
-        </div>
-    </footer> 
+            <p>Last updated: May 2026</p>
+        </footer>
+    </div>
 
 </body>
 </html>
