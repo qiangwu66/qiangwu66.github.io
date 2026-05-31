@@ -122,15 +122,26 @@
             </section>
 
             <!-- Publications (Replaced with BibBase) -->
-            <section>
-                <section id="publications">
-                  <h2>Publications</h2>
-                  <p class="pub-note"><em><sup>‡</sup> Equal contribution; * Corresponding author.</em></p>
+            <!-- Publications (Replaced with BibBase) -->
+<section>
+    <section id="publications">
+        <h2>Publications</h2>
+        <p class="pub-note"><em><sup>‡</sup> Equal contribution; * Corresponding author.</em></p>
 
-                <!-- BibBase 嵌入代码 -->
-                <script src="https://bibbase.org/show?bib=https://raw.githubusercontent.com/qiangwu66/qiangwu66.github.io/refs/heads/main/publications.bib&jsonp=1&theme=default&authorFirst=1"></script>
-                <!-- 如果您在本地测试时看不到列表，是因为 BibBase 需要从公网读取您的 .bib 文件。当您推送到 GitHub Pages 后即可正常显示。 -->
-            </section>
+        <!-- 1. 添加 CSS 样式，专门控制高亮作者的格式（加粗 + 下划线） -->
+        <style>
+            .bibbase_highlighted_author {
+                font-weight: bold !important;
+                text-decoration: underline !important;
+            }
+        </style>
+
+        <!-- 2. BibBase 嵌入代码 (注意链接末尾增加了 &hl=Wu,+Qiang 参数) -->
+        <script src="https://bibbase.org/show?bib=https://raw.githubusercontent.com/qiangwu66/qiangwu66.github.io/refs/heads/main/publications.bib&jsonp=1&theme=default&authorFirst=1&hl=Wu,+Qiang"></script>
+        
+        <!-- 如果您在本地测试时看不到列表，是因为 BibBase 需要从公网读取您的 .bib 文件。当您推送到 GitHub Pages 后即可正常显示。 -->
+    </section>
+</section>
 
             <!-- Research Projects -->
             <section>
