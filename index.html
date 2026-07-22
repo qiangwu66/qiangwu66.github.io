@@ -6,7 +6,7 @@
     <title>Qiang Wu - Academic Homepage</title>
     <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome for icons -->
+    <!-- FontAwesome for icons (Kept for email icon) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
@@ -87,17 +87,16 @@
             </div>
         </header>
 
-        
-
+        <main class="space-y-12">
             <!-- Publications -->
             <section>
-                <h2 class="section-title"><i class="fa-solid fa-book mr-2 text-indigo-500"></i>Publications</h2>
+                <h2 class="section-title">Publications</h2>
                 <p class="text-sm text-gray-500 mb-4">(* Corresponding author, # Co-first author)</p>
                 
                 <h3 class="text-xl font-semibold text-gray-800 mb-3 mt-6">Published or Accepted Papers</h3>
                 <ol class="list-decimal list-outside ml-5 space-y-3 text-gray-700">
                     <!-- 2026 -->
-                    <li><span class="me">Wu Q.#</span>, Du M.#, Ma S., Zhao X.* (2026). <span class="pub-title">Efficient estimation for deep generalized accelerated hazards models with interval-censored data. </span> <em>Biometrics</em> (Accepted).
+                    <li><span class="me">Wu Q.#</span>, Du M.#, Ma S., Zhao X.* (2026). <span class="pub-title">Efficient estimation for deep generalized accelerated hazards models with interval-censored data. </span> <em>Biometrics</em> (Accepted).</li>
                     <li>Su W.#, <span class="me">Wu Q.#</span>, Liu K., Yin G., Huang J., Zhao X.* (2026). <span class="pub-title">Nonparametric inference for censored data using deep neural networks.</span> <em>Journal of the Royal Statistical Society Series B: Statistical Methodology</em>, qkag060.</li>
                     <li>Huang Q., Feng A., <span class="me">Wu Q.*</span>, Tong X. (2026). <span class="pub-title">Deep Learning for the change-point Cox model with current status data.</span> <em>Lifetime Data Analysis</em>, 32(14).</li>
                     
@@ -107,8 +106,8 @@
                     
                     <!-- 2024 -->
                     <li><span class="me">Wu Q.</span>, Tong X., Zhao X.* (2024). <span class="pub-title">Deep partially linear Cox model for current status data.</span> <em>Biometrics</em>, 80(2), ujae024.</li>
-                    <li>Du M.#, <span class="me">Wu Q.#</span>, Tong X., Zhao X.* (2024). <span class="pub-title">Deep learning for regression analysis of interval-censored data.</span> <em>Electronic Journal of Statistics</em>, 18(2), 4292-4321.</li>
                     <li><span class="me">Wu Q.</span>, Tong X., Duan X.* (2024). <span class="pub-title">Exclusive hypothesis testing for Cox's proportional hazards model.</span> <em>Journal of Systems Science and Complexity</em>, 37(5), 2157-2172.</li>
+                    <li>Du M.#, <span class="me">Wu Q.#</span>, Tong X., Zhao X.* (2024). <span class="pub-title">Deep learning for regression analysis of interval-censored data.</span> <em>Electronic Journal of Statistics</em>, 18(2), 4292-4321.</li>
                     
                     <!-- 2022 -->
                     <li><span class="me">Wu Q.</span>, Zhong S.*, Tong X. (2022). <span class="pub-title">Genetic pleiotropy test by quasi p-value with application to typhoon data in China.</span> <em>Journal of Systems Science and Complexity</em>, 35(4), 1557-1572.</li>
@@ -117,7 +116,7 @@
 
             <!-- Research Projects -->
             <section>
-                <h2 class="section-title"><i class="fa-solid fa-flask mr-2 text-indigo-500"></i>Research Projects</h2>
+                <h2 class="section-title">Research Projects</h2>
                 <ul class="list-disc list-outside ml-5 space-y-2 text-gray-700">
                     <li>
                         <strong>National Natural Science Foundation of China (Youth Fund)</strong> (Grant No. 12501387)<br>
@@ -129,7 +128,7 @@
 
             <!-- Academic Exchange / Presentations -->
             <section>
-                <h2 class="section-title"><i class="fa-solid fa-microphone mr-2 text-indigo-500"></i>Presentations & Talks</h2>
+                <h2 class="section-title">Presentations & Talks</h2>
                 <ul class="list-disc list-outside ml-5 space-y-4 text-gray-700">
                     <li>
                         <strong>Invited Address:</strong> <em>Deep Nonparametric Inference for Interval-Censored Data</em><br>
@@ -157,7 +156,7 @@
             <!-- Academic Service & Awards -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <section>
-                    <h2 class="section-title"><i class="fa-solid fa-users mr-2 text-indigo-500"></i>Academic Service</h2>
+                    <h2 class="section-title">Academic Service</h2>
                     <ul class="list-disc list-outside ml-5 space-y-2 text-gray-700">
                         <li>Anonymous Reviewer for <em>Biometrics</em></li>
                         <li>Anonymous Reviewer for <em>Statistica Sinica</em></li>
@@ -166,7 +165,7 @@
                 </section>
 
                 <section>
-                    <h2 class="section-title"><i class="fa-solid fa-award mr-2 text-indigo-500"></i>Honors & Awards</h2>
+                    <h2 class="section-title">Honors & Awards</h2>
                     <ul class="list-disc list-outside ml-5 space-y-2 text-gray-700">
                         <li><strong>Grand Prize</strong>, "Graduate Academic Innovation Award", Beijing Normal University (2024)</li>
                         <li><strong>Excellent Paper Award</strong>, The 6th National PhD Student Academic Forum in Statistics</li>
@@ -177,7 +176,7 @@
             <!-- Skills (Commented out) -->
             <!--
             <section>
-                <h2 class="section-title"><i class="fa-solid fa-laptop-code mr-2 text-indigo-500"></i>Professional Skills</h2>
+                <h2 class="section-title">Professional Skills</h2>
                 <ul class="list-disc list-outside ml-5 space-y-2 text-gray-700">
                     <li><strong>Programming & Data Analysis:</strong> Proficient in Python and R. Strong capability in statistical modeling and complex data processing. Experienced in developing customized statistical analysis tools and implementing deep learning models using frameworks such as TensorFlow and PyTorch.</li>
                     <li><strong>Languages:</strong> Excellent English reading and writing skills, capable of independently drafting scientific papers and technical documents, and actively participating in international academic exchanges.</li>
